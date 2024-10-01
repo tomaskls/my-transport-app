@@ -59,11 +59,7 @@ function Header() {
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.services')}</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.about')}</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.contact')}</a>
-            <div className="flex space-x-2 mt-4">
-              <LanguageButton lang="LT" onClick={changeLanguage} active={i18n.language === 'lt'} />
-              <LanguageButton lang="EN" onClick={changeLanguage} active={i18n.language === 'en'} />
-              <LanguageButton lang="RU" onClick={changeLanguage} active={i18n.language === 'ru'} />
-            </div>
+            
           </nav>
         </div>
       )}

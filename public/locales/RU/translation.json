@@ -27,9 +27,7 @@
   },
   "contact": {
     "title": "Свяжитесь с нами",
-    "call": "Позвонить",
-    "viber": "Viber",
-    "whatsapp": "WhatsApp"
+    "call": "Позвонить"
   },
   "footer": {
     "description": "Надежные трансферы до всех аэропортов",

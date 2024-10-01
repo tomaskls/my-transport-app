@@ -4,6 +4,11 @@
     {
       "src": "/api/placeholder/(.*)",
       "dest": "/api/placeholder.js"
+    },
+    {
+      "src": "/locales/(.*)",
+      "dest": "/public/locales/$1"
     }
+  
   ]
 }

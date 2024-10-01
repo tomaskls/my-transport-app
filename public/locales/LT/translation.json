@@ -1,0 +1,40 @@
+{
+    "nav": {
+      "home": "Pagrindinis",
+      "services": "Paslaugos",
+      "about": "Apie mus",
+      "contact": "Kontaktai"
+    },
+    "hero": {
+      "title": "Patogus transportas į oro uostą",
+      "subtitle": "Patikimas ir saugus pervežimas į visus oro uostus",
+      "cta": "Užsisakyk dabar"
+    },
+    "services": {
+    "title": "Mūsų paslaugos",
+    "airport_transfer": "Pervežimas į oro uostą",
+    "airport_transfer_description": "Patogus ir punktualus nuvežimas į oro uostą jūsų skrydžiui",
+    "airport_pickup": "Pasiėmimas iš oro uosto",
+    "airport_pickup_description": "Jus pasitiks mūsų vairuotojas ir saugiai parveš namo",
+    "group_transfer": "Grupių pervežimas",
+    "group_transfer_description": "Didelių grupių transportavimas į/iš oro uosto"
+  },
+    "airports": {
+      "title": "Aptarnaujami oro uostai",
+      "riga": "Rygos oro uostas",
+      "vilnius": "Vilniaus oro uostas",
+      "kaunas": "Kauno oro uostas"
+    },
+    "contact": {
+      "title": "Susisiekite su mumis",
+      "call": "Skambinti",
+      "viber": "Viber",
+      "whatsapp": "WhatsApp"
+    },
+    "footer": {
+      "description": "Patikimas pervežimas į visus oro uostus",
+      "contacts": "Kontaktai",
+      "follow_us": "Sekite mus"
+    }
+  }
+  

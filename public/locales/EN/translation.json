@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Convenient Airport Transport",
+    "subtitle": "Reliable and Safe Transfers to All Airports",
+    "cta": "Book Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "airport_transfer": "Airport Transfer",
+    "airport_transfer_description": "Convenient and punctual transfer to the airport for your flight",
+    "airport_pickup": "Airport Pickup",
+    "airport_pickup_description": "Our driver will meet you and safely bring you home",
+    "group_transfer": "Group Transfer",
+    "group_transfer_description": "Transportation for large groups to/from the airport"
+  },
+  "airports": {
+    "title": "Serviced Airports",
+    "riga": "Riga Airport",
+    "vilnius": "Vilnius Airport",
+    "kaunas": "Kaunas Airport"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "call": "Call",
+    "viber": "Viber",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "description": "Reliable Transfers to All Airports",
+    "contacts": "Contacts",
+    "follow_us": "Follow Us"
+  }
+}

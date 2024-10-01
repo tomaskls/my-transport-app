@@ -1,9 +1,9 @@
+
 {
-    "routes": [
-      {
-        "src": "/locales/(.*)",
-        "dest": "/public/locales/$1"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/api/placeholder/(.*)",
+      "dest": "/api/placeholder.js"
+    }
+  ]
+}

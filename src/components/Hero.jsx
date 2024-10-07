@@ -11,7 +11,7 @@ function Hero() {
             <i className="fas fa-phone-alt mr-2"></i>{t('hero.cta')}
           </a>
           <div className="mt-4 space-x-4">
-            <a href="viber://chat?number=+37060287970" className="text-white hover:text-blue-300"><i className="fab fa-viber fa-2x"></i></a>
+            <a href="viber://chat?number=%2B37060287970" className="text-white hover:text-blue-300"><i className="fab fa-viber fa-2x"></i></a>
             <a href="#" className="text-white hover:text-green-300"><i className="fab fa-whatsapp fa-2x"></i></a>
           </div>
         </div>

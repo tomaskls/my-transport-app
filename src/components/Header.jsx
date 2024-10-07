@@ -1,4 +1,3 @@
-// components/Header.jsx
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
@@ -28,6 +27,10 @@ function Header() {
     i18n.changeLanguage(lang);
   };
 
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <nav className="container mx-auto px-6 py-3">
@@ -45,21 +48,34 @@ function Header() {
             <LanguageButton lang="RU" onClick={changeLanguage} active={i18n.language === 'ru'} />
           </div>
           <button 
-            className="md:hidden"
+            className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
-            <i className="fas fa-bars text-gray-600"></i>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-7 w-7" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M4 6h16M4 12h16M4 18h16" 
+              />
+            </svg>
           </button>
         </div>
       </nav>
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg z-50 p-4">
           <nav className="flex flex-col space-y-4">
-            <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.home')}</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.services')}</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.about')}</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.contact')}</a>
-            
+            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.home')}</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.services')}</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.about')}</a>
+            <a href="#contacts" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.contact')}</a>
           </nav>
         </div>
       )}

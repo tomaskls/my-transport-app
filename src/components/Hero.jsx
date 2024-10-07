@@ -3,7 +3,7 @@ function Hero() {
   const { t } = useTranslation();
     return (
       <section className="relative bg-gray-900 text-white py-32 mt-16">
-        <img className='planeImg' src="/airplane-7766082_1280.webp" alt="" />
+        <img className='planeImg' src="/airplane.jpg" alt="" />
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('hero.title')}</h1>
           <p className="text-xl mb-8">{t('hero.subtitle')}</p>

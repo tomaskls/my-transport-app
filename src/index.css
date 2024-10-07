@@ -13,3 +13,6 @@
 .viberBtn{
     padding: 30px;
  }
+ html {
+    scroll-behavior: smooth;
+  }

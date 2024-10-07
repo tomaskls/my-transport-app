@@ -70,12 +70,12 @@ function Header() {
         </div>
       </nav>
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg z-50 p-4">
-          <nav className="flex flex-col space-y-4">
-            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.home')}</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.services')}</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.about')}</a>
-            <a href="#contacts" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>{t('nav.contact')}</a>
+        <div className="fixed top-16 right-0 md:hidden bg-white shadow-lg z-50 w-48 py-2 rounded-bl-lg">
+          <nav className="flex flex-col">
+            <a href="#" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.home')}</a>
+            <a href="#services" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.services')}</a>
+            <a href="#" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.about')}</a>
+            <a href="#contacts" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.contact')}</a>
           </nav>
         </div>
       )}

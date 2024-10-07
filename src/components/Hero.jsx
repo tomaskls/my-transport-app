@@ -12,7 +12,7 @@ function Hero() {
           </a>
           <div className="mt-4 space-x-4">
             <a href="viber://chat?number=%2B37060287970" className="text-white hover:text-blue-300"><i className="fab fa-viber fa-2x"></i></a>
-            <a href="#" className="text-white hover:text-green-300"><i className="fab fa-whatsapp fa-2x"></i></a>
+            <a href="https://wa.me/37060287970" className="text-white hover:text-green-300"><i className="fab fa-whatsapp fa-2x"></i></a>
           </div>
         </div>
       </section>

@@ -21,9 +21,9 @@
   },
   "airports": {
     "title": "Обслуживаемые аэропорты",
-    "riga": "Шяуляй-Аэропорт Риги",
-    "vilnius": "Шяуляй-Аэропорт Вильнюса",
-    "kaunas": "Шяуляй-Аэропорт Каунаса",
+    "riga": "Šiauliai-Riga airport",
+    "vilnius": "Šiauliai-Vilnius airport",
+    "kaunas": "Šiauliai-Kaunas airport",
     "riga_price": "Цена от 80.00 евро*",
     "vilnius_price": "Цена от 120.00 евро*",
     "kaunas_price": "Цена от 80.00 евро*"
@@ -34,7 +34,6 @@
   },
   "footer": {
     "description": "Надежные трансферы до всех аэропортов",
-    "contacts": "Контакты",
-    "follow_us": "Следите за нами"
+    "contacts": "Контакты"
   }
 }

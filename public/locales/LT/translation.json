@@ -16,7 +16,7 @@
     "airport_transfer_description": "Patogus ir punktualus nuvežimas į oro uostą jūsų skrydžiui",
     "airport_pickup": "Pasiėmimas iš oro uosto",
     "airport_pickup_description": "Jus pasitiks mūsų vairuotojas ir saugiai parveš namo",
-    "group_transfer": "Kelionės i kitą miestą",
+    "group_transfer": "Kelionės į kitą miestą iš Šiaulių",
     "group_transfer_description": "Vežame į kitus miestus (klinikas, ligonines, kitas įstaigas) ir atgal"
   },
   "airports": {
@@ -34,7 +34,6 @@
   },
   "footer": {
     "description": "Patikimas pervežimas į visus oro uostus",
-    "contacts": "Kontaktai",
-    "follow_us": "Sekite mus"
+    "contacts": "Kontaktai"
   }
 }

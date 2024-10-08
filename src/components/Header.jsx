@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
@@ -22,6 +22,8 @@ LanguageButton.propTypes = {
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const menuRef = useRef();
+  const buttonRef = useRef();
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -31,11 +33,28 @@ function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (isMobileMenuOpen && 
+          menuRef.current && 
+          !menuRef.current.contains(event.target) &&
+          buttonRef.current &&
+          !buttonRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-xl font-bold text-gray-800">Šiauliai Transfers</a>
+          <a href="#" className="text-xl font-bold text-gray-800">Oro uosto transportas</a>
           <div className="hidden md:flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.home')}</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.services')}</a>
@@ -48,6 +67,7 @@ function Header() {
             <LanguageButton lang="RU" onClick={changeLanguage} active={i18n.language === 'ru'} />
           </div>
           <button 
+            ref={buttonRef}
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
@@ -70,10 +90,13 @@ function Header() {
         </div>
       </nav>
       {isMobileMenuOpen && (
-        <div className="fixed top-16 right-0 md:hidden bg-white shadow-lg z-50 w-48 py-2 rounded-bl-lg">
+        <div 
+          ref={menuRef}
+          className="fixed top-16 right-0 md:hidden bg-white shadow-lg z-50 w-48 py-2 rounded-bl-lg"
+        >
           <nav className="flex flex-col">
             <a href="#" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.home')}</a>
-            <a href="#services" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.services')}</a>
+            <a href="#" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.services')}</a>
             <a href="#" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.about')}</a>
             <a href="#contacts" className="px-4 py-2 text-gray-600 hover:bg-gray-100" onClick={handleLinkClick}>{t('nav.contact')}</a>
           </nav>

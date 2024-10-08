@@ -35,7 +35,7 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-xl font-bold text-gray-800">Oro uosto transportas</a>
+          <a href="#" className="text-xl font-bold text-gray-800">Šiauliai Transfers</a>
           <div className="hidden md:flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.home')}</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">{t('nav.services')}</a>

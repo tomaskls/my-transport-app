@@ -25,19 +25,19 @@ function Airports() {
     {
       name: t('airports.riga'),
       url: "https://www.riga-airport.com/",
-      imageUrl: "/Riga_Airport.jpg",
+      imageUrl: "/Riga_Airport.webp",
       price: t('airports.riga_price')
     },
     {
       name: t('airports.vilnius'),
       url: "https://www.vno.lt/",
-      imageUrl: "/Vilnius_Airport.jpg",
+      imageUrl: "/Vilnius_Airport.webp",
       price: t('airports.vilnius_price')
     },
     {
       name: t('airports.kaunas'),
       url: "https://www.kaunas-airport.lt/",
-      imageUrl: "/Kauno_airport.jpg",
+      imageUrl: "/Kauno_airport.webp",
       price: t('airports.kaunas_price')
     }
   ];

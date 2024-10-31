@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-     "check-translations": "node check-translations.js",
+    "check-translations": "node check-translations.js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "i18next-http-backend": "^2.6.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.0.2"
   },
   "devDependencies": {

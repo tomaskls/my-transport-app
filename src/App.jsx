@@ -4,9 +4,11 @@ import Services from './components/Services';
 import Airports from './components/Airports';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <div className="font-sans bg-gray-100">
       <Header />
       <Hero />
@@ -15,6 +17,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </HelmetProvider>
   );
 }
 

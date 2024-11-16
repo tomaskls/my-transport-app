@@ -1,8 +1,19 @@
-# React + Vite
+# Airport Transfer Company 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website This is a single-page website for an airport transfer company, built with React.js, Vite, and Tailwind CSS. The website supports three languages.
 
-Currently, two official plugins are available:
+ ## Project Goals 
+ The goal of this project is to create a seamless and user-friendly experience for clients looking to book airport transfers. The website aims to: 
+ - Offer easy navigation and an easy way for potential clients to get in touch via phone or other contact methods.
+ - Support multiple languages to cater to a diverse clientele. 
+ - Utilize Tailwind CSS to maintain a clean, modern, and responsive design.
+ 
+ ## Technologies 
+ This project uses the following technologies: 
+ - React.js 
+ - Vite 
+ - Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ## Author
+
+Tomas: [Github](https://github.com/tomaskls/)

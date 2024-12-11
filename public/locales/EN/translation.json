@@ -23,7 +23,10 @@
     "title": "Serviced Airports",
     "riga": "Šiauliai-Riga Airport",
     "vilnius": "Šiauliai-Vilnius Airport",
-    "kaunas": "Šiauliai-Kaunas Airport"
+    "kaunas": "Šiauliai-Kaunas Airport",
+    "riga_price": "Price from 80.00 eur*",
+    "vilnius_price": "Price from 120.00 eur*",
+    "kaunas_price": "Price from 80.00 eur*"
   },
   "contact": {
     "title": "Contact Us",
